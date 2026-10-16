@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rutinas - GymAdmin</title><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="app"><aside id="menu"></aside><div class="contenido"><header id="topbar"></header><main>
+<div class="herram"><select id="cliente" class="solo-staff" onchange="cargarRutinas()"></select><button class="btn solo-staff" onclick="abrir()">+ Nueva rutina</button></div>
+<div id="lista"><p class="vacio">Elige un cliente para ver sus rutinas.</p></div>
+<dialog id="dlg" class="ancho"><form id="f" class="cuerpo"><h3>Nueva rutina</h3>
+<label>Cliente<select name="clienteId" required></select></label>
+<label>Entrenador<select name="entrenadorId" required></select></label>
+<label>Nombre de la rutina<input name="nombre" required maxlength="100"></label>
+<label>Objetivo<input name="objetivo" maxlength="250"></label>
+<label>Fecha de inicio<input name="fechaInicio" type="date"></label>
+<label>Fecha de fin (opcional)<input name="fechaFin" type="date"></label>
+<p class="sub">Días de la rutina. En cada fila: ejercicio, series, repeticiones y descanso en segundos.</p>
+<div id="dias"></div>
+<p><button type="button" class="btn sec" onclick="agregarDia()">+ Agregar día</button></p>
+<div class="acc-form"><button type="button" class="btn sec" onclick="dlg.close()">Cancelar</button><button class="btn">Guardar</button></div></form></dialog>
+</main></div></div>
+<script src="js/api.js"></script><script src="js/layout.js"></script><script src="js/extra.js"></script><script src="js/rutinas.js"></script></body></html>

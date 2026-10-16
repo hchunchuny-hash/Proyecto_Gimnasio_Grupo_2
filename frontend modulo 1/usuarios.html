@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Usuarios y roles - GymAdmin</title><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="app"><aside id="menu"></aside><div class="contenido"><header id="topbar"></header><main>
+<section class="panel"><h2>Usuarios</h2><form id="buscar" class="busqueda"><label>Buscar por usuario, correo o ID<input id="q" maxlength="100"></label><button class="btn">Buscar</button></form>
+<div class="tabla-wrap"><table><thead><tr><th>ID</th><th>Usuario</th><th>Correo</th><th>Rol</th><th>Estado</th><th>Administrar</th></tr></thead><tbody id="usuarios"></tbody></table></div></section>
+<section class="panel"><h2>Historial de roles</h2><div class="tabla-wrap"><table><thead><tr><th>Fecha</th><th>Administrador</th><th>Usuario afectado</th><th>Rol anterior</th><th>Rol nuevo</th><th>Resultado</th></tr></thead><tbody id="auditoria"></tbody></table></div></section>
+</main></div></div><script src="js/api.js"></script><script src="js/layout.js"></script><script src="js/usuarios.js"></script></body></html>

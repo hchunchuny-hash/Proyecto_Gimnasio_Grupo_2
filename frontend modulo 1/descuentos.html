@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Descuentos - GymAdmin</title><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="app"><aside id="menu"></aside><div class="contenido"><header id="topbar"></header><main>
+<div class="herram"><input id="buscar" placeholder="Buscar descuento..." oninput="pintar()"><button class="btn" onclick="abrir()">+ Nuevo descuento</button></div><div class="tabla"><table><thead><tr><th>Descuento</th><th>Porcentaje</th><th>Desde</th><th>Hasta</th><th>Estado</th><th></th></tr></thead><tbody id="filas"><tr><td colspan="6" class="vacio">Cargando...</td></tr></tbody></table></div><dialog id="dlg"><form id="f" class="cuerpo"><h3>Descuento</h3>
+<label>Nombre<input name="nombre" required maxlength="100"></label>
+<label>Porcentaje (0 a 100)<input name="porcentaje" type="number" step="0.01" min="0" max="100" required></label>
+<label>Fecha de inicio<input name="fechaInicio" type="date" required></label>
+<label>Fecha de fin (opcional)<input name="fechaFin" type="date"></label>
+<label class="check"><input name="estado" type="checkbox" checked>Descuento activo</label>
+<div class="acc-form"><button type="button" class="btn sec" onclick="dlg.close()">Cancelar</button><button class="btn">Guardar</button></div></form></dialog>
+</main></div></div>
+<script src="js/api.js"></script><script src="js/layout.js"></script><script src="js/extra.js"></script><script src="js/descuentos.js"></script></body></html>

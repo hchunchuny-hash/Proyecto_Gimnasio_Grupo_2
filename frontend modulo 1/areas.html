@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Áreas - GymAdmin</title><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="app"><aside id="menu"></aside><div class="contenido"><header id="topbar"></header><main>
+<div class="herram"><input id="buscar" placeholder="Buscar área..." oninput="pintar()"><button class="btn solo-admin" onclick="abrir(null)">+ Nueva área</button></div>
+<div class="tabla"><table><thead><tr><th>Nombre</th><th>Descripción</th><th>Estado</th><th></th></tr></thead>
+<tbody id="filas"><tr><td colspan="4" class="vacio">Cargando...</td></tr></tbody></table></div>
+<dialog id="dlg"><form id="f" class="cuerpo"><h3 id="titulo"></h3>
+<label>Nombre<input name="nombre" required maxlength="100"></label>
+<label>Descripción<input name="descripcion" maxlength="255"></label>
+<label class="check"><input name="estado" type="checkbox" checked>Área activa</label>
+<div class="acc-form"><button type="button" class="btn sec" onclick="dlg.close()">Cancelar</button><button class="btn">Guardar</button></div></form></dialog>
+</main></div></div>
+<script src="js/api.js"></script><script src="js/layout.js"></script><script src="js/areas.js"></script></body></html>

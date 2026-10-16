@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Crear cuenta - GymAdmin</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="auth-body">
+<section class="hero"><b>GymAdmin</b><h2>Tu gimnasio, <span>bajo control.</span></h2><p>Áreas, equipamiento y más módulos en un solo lugar.</p></section>
+<main class="form-lado"><div class="auth"><h2>Crear cuenta</h2><p>Completa tus datos para registrarte.</p>
+<form id="registro"><label>Usuario<input name="nombreUsuario" required minlength="3" maxlength="50"></label>
+<label>Correo<input name="correo" type="email" required maxlength="100"></label>
+<label>Contraseña<input name="contrasena" type="password" required minlength="8" maxlength="16"><small>De 8 a 16 caracteres, con letras, números y un carácter especial.</small></label>
+<div id="perfil"><label>Nombres<input name="nombres" maxlength="100"></label>
+<label>Apellidos<input name="apellidos" maxlength="100"></label>
+<label>Teléfono<input name="telefono" maxlength="8" inputmode="numeric" pattern="[0-9]{7,8}" title="7 u 8 dígitos, solo números"></label>
+<div id="campoNac"><label>Fecha de nacimiento<input name="fechaNacimiento" type="date"></label></div>
+<div id="campoEsp" hidden><label>Especialidad<input name="especialidad" maxlength="100"></label></div></div>
+<button class="btn">Crear cuenta</button></form>
+<p style="margin-top:16px">¿Ya tienes cuenta? <a href="index.html">Inicia sesión</a></p></div></main>
+<script src="js/api.js"></script><script src="js/auth.js"></script></body></html>

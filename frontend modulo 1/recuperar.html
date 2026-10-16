@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Recuperar contraseña - GymAdmin</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="auth-body">
+<section class="hero"><b>GymAdmin</b><h2>Recupera el <span>acceso.</span></h2><p>Solicita instrucciones al correo de tu cuenta y define una contraseña nueva.</p></section>
+<main class="form-lado"><div class="auth">
+<div id="paso1"><h2>Recuperar contraseña</h2><p>Escribe tu usuario y el correo con el que te registraste.</p>
+<form id="solicitar"><label>Usuario<input name="nombreUsuario" required autofocus></label>
+<label>Correo<input name="correo" type="email" required maxlength="100"></label>
+<button class="btn">Enviar instrucciones</button></form></div>
+<div id="paso2" hidden><h2>Nueva contraseña</h2><p>El enlace recibido por correo vence en 30 minutos.</p>
+<form id="resetear"><input name="token" type="hidden" required>
+<label>Nueva contraseña<input name="nuevaContrasena" type="password" required minlength="8" maxlength="16"><small>De 8 a 16 caracteres, con letras, números y un carácter especial.</small></label>
+<label>Repite la contraseña<input name="repetir" type="password" required minlength="8" maxlength="16"></label>
+<button class="btn">Cambiar contraseña</button></form></div>
+<p style="margin-top:16px"><a href="index.html">Volver a iniciar sesión</a></p></div></main>
+<script src="js/api.js"></script><script src="js/recuperar.js"></script></body></html>
